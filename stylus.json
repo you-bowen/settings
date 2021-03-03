@@ -1,0 +1,127 @@
+[
+  {
+    "settings": {
+      "openEditInWindow": false,
+      "openEditInWindow.popup": false,
+      "windowPosition": {},
+      "show-badge": true,
+      "disableAll": false,
+      "exposeIframes": false,
+      "newStyleAsUsercss": false,
+      "styleViaXhr": false,
+      "patchCsp": false,
+      "config.autosave": true,
+      "popup.breadcrumbs": true,
+      "popup.breadcrumbs.usePath": false,
+      "popup.enabledFirst": true,
+      "popup.stylesFirst": true,
+      "popup.autoResort": false,
+      "popup.borders": false,
+      "popup.findStylesInline": true,
+      "manage.onlyEnabled": false,
+      "manage.onlyLocal": false,
+      "manage.onlyUsercss": false,
+      "manage.onlyEnabled.invert": false,
+      "manage.onlyLocal.invert": false,
+      "manage.onlyUsercss.invert": false,
+      "manage.actions.expanded": true,
+      "manage.backup.expanded": true,
+      "manage.filters.expanded": true,
+      "manage.newUI": true,
+      "manage.newUI.favicons": false,
+      "manage.newUI.faviconsGray": true,
+      "manage.newUI.targets": 3,
+      "manage.newUI.sort": "title,asc",
+      "editor.options": {},
+      "editor.toc.expanded": true,
+      "editor.options.expanded": true,
+      "editor.lint.expanded": true,
+      "editor.lineWrapping": true,
+      "editor.smartIndent": true,
+      "editor.indentWithTabs": false,
+      "editor.tabSize": 4,
+      "editor.keyMap": "sublime",
+      "editor.theme": "default",
+      "editor.beautify": {
+        "selector_separator_newline": true,
+        "newline_before_open_brace": false,
+        "newline_after_open_brace": true,
+        "newline_between_properties": true,
+        "newline_before_close_brace": true,
+        "newline_between_rules": false,
+        "preserve_newlines": true,
+        "end_with_newline": false,
+        "indent_conditional": true
+      },
+      "editor.beautify.hotkey": "",
+      "editor.lintDelay": 300,
+      "editor.linter": "csslint",
+      "editor.lintReportDelay": 500,
+      "editor.matchHighlight": "token",
+      "editor.autoCloseBrackets": true,
+      "editor.autocompleteOnTyping": false,
+      "editor.contextDelete": null,
+      "editor.selectByTokens": true,
+      "editor.appliesToLineWidget": true,
+      "editor.livePreview": true,
+      "editor.colorpicker": true,
+      "editor.colorpicker.hexUppercase": false,
+      "editor.colorpicker.hotkey": "",
+      "editor.colorpicker.color": "",
+      "editor.colorpicker.maxHeight": 300,
+      "hotkey._execute_browser_action": "",
+      "hotkey.openManage": "",
+      "hotkey.styleDisableAll": "",
+      "sync.enabled": "none",
+      "iconset": 0,
+      "badgeDisabled": "#8B0000",
+      "badgeNormal": "#006666",
+      "popupWidth": 246,
+      "updateInterval": 24
+    }
+  },
+  {
+    "enabled": true,
+    "updateUrl": "https://userstyles.org/styles/chrome/169531.json?ik-color=%23D9D6E1&ik-image=ik-image",
+    "md5Url": "https://update.userstyles.org/169531.md5",
+    "url": "http://userstyles.org/styles/169531",
+    "originalMd5": "b0f066fe958d161547cecf8d75fa0107",
+    "installDate": 1596801463003,
+    "sections": [
+      {
+        "code": "/*去广告*/\n#content_left>div:not(.c-container){\n    position:fixed;\n    left: -100%;\n}\n.hint_right_middle{\n    display:none\n}\n/**计数器*/\n.CounterT{\n    background: #FD9999;\n}\n/**右侧栏*/\n.container_l #content_right{\n    padding: 20px 15px 15px;\n    border-radius: 0px;\n    box-sizing: border-box;\n    box-shadow: 0 5px 10px rgba(0,0,0,0.05);\n    z-index:1;\n    transition: all 0.5s;\n    position: absolute;\n    overflow: hidden;\n    left: 70%;\n    background:rgba(255,255,255,0.3)\n}\n.c-table th {\n       background-color: rgba(255,255,255,0);\n}\n.container_l #content_right:hover{\n    box-shadow: none;\n        background:rgba(255,255,255,1)\n}\n\n.container_s #content_right{\n    display:none\n}\n/**背景*/\nbody{\n  background: #D9D6E1 url(https://cdn.jsdelivr.net/gh/you-bowen/func_picgo/20200821173120.png) no-repeat fixed top right; \n  background-size: cover;\n  content:\"\";\n  position: absolute;\n  width: 100%; \n  height: 100%; \n}\n/**页眉*/\n#result_logo{\n    width: 101px;height: 33px;\n    background-image: url(https://pic.rmb.bdstatic.com/c86255e8028696139d3e3e4bb44c047b.png);\n    background-size:contain !important;\n    background-repeat:no-repeat\n}\n#result_logo img {display: none;}\n#head:not(.s_down) {\n    background: transparent !important;\n    transition: all 0.5s\n}\n#head.s_down{\nbackground:rgba(255,255,255,0.8) !important;\n     box-shadow: 0 5px 10px rgba(0,0,0,0.05) !important;\n    transition: all 0.5s\n}\n/**搜索框*/\n.s_ipt_wr{\nborder-radius:0px;\nborder:0px solid;\nbox-shadow: none;\n}\n#form .s_ipt_wr.bg{\nwidth:107%\n}\n.s_ipt_wr{\n    background-color:rgba(255,255,255,0) !important;\n    border-bottom: 1px solid rgba(0,0,0,0.1) ;\n    transition: all 0.5s\n}\n.s_ipt_wr:hover{\n    background-color:rgba(255,255,255,1) !important;\n    border-bottom: 1px solid rgba(0,0,0,0) ;\n}\n.iptfocus{\n    background:#fff !important;\n    border-color: rgba(0,0,0,0.1) !important;\n}\n/*图片搜索图标*/\n.soutu-btn{\n    background-color: transparent;\n}\n/**搜索按钮*/\n.s_btn_wr{\ndisplay:none !important;\n}\n/*联想结果*/\n#head .bdsug{\n    width:107%;\n    border:none;\n    box-shadow: 0 5px 10px rgba(0,0,0,0.05)\n}\n/*搜索结果*/\n#wrapper #rs, #wrapper #content_left .result, #wrapper #content_left .c-container {\n    margin-bottom: 20px !important;\n}\n/*播放按钮*/\n.op_dict3_how_read, .op_dict3_mp3_play {\n    background: url(https://i.loli.net/2019/06/01/5cf2918a6c7c034265.gif) no-repeat;\n}\n/**自定义按钮**/\n#myuser .myuserconfig{\n    background:transparent !important;\n    color:#333 !important;\n    box-shadow:0 0 0 0  !important;\n    border:0;\n    font-size:12px;\n    font-family: arial;\n    text-decoration-style: solid;\n    text-decoration-line: none;\n    font-weight:normal;\n    text-decoration: none;\n}\n#myuser .myuserconfig:hover{\n\tbackground:transparent !important;\n\tborder:0;\n    text-decoration:underline\n}\n/**音乐聚合结果Tabs**/\n.c-tabs-nav, .c-tabs-nav-selected{\n       background-color: #fff0 !important;\n}\n/**AC-Baidu**/\niframe,\n.res_top_banner #foot,\n#page .fk,\n#head .headBlock,\n#rs_top_new,\n#wrapper #content_left>table,\n#wrapper #content_left .c-recommend,\n#wrapper #content_left .leftBlock,\n#wrapper #content_left .rrecom-btn-parent,\n#demo,\n#wrapper #gotoPage,\nbody>div.result-op,\n.rrecom-container,\n.chunwan-wrapper {\n display:none!important\n}\n#wrapper #content_right {\n margin-right:-6%\n}\nbody[baidu] {\n background-color:#f5f5f5\n}\nform.fm .bdsug {\n width:76%\n}\n#ala_img_results {\n overflow:hidden\n}\nbody a,\nbody a em {\n text-decoration:none\n}\n#wrapper #s_tab {\n border-bottom: none;\n background-color:transparent\n}\nbody #head {\n background-color:#f8f8f8;\n border-bottom:0\n}\nform.fm {\n background-color:unset\n}\nform.fm .bdsug li {\n width:auto;\n color:#000;\n font:15px arial;\n line-height:26px\n}\nform.fm .s_ipt_wr.bg {\n background:#fff;\n width:76%\n}\nform.fm .s_btn {\n background:#2866bd;\n border-bottom:1px solid #4879bd\n}\nform.fm .s_btn:hover {\n background:#4f7fbf;\n border-bottom:1px solid #2866bd\n}\n#wrapper #s_tab b {\n color:#2866bd;\n border-bottom: none\n}\n#u a {\n text-decoration:none\n}\n#wrapper .head_nums_cont_outer .search_tool_conter,\n#wrapper .head_nums_cont_outer .nums {\n width:630px\n}\n#wrapper #content_left {\n animation-name:left_logoR;\n -webkit-animation-duration:.1s;\n -webkit-animation-timing-function:ease\n}\n#wrapper #rs,\n#wrapper #content_left .result,\n#wrapper #content_left .c-container {\n width:670px;\n padding:0 20px 15px;\n margin-top:0;\n margin-bottom:20px;\n border-radius:0px;\n background-color:rgba(255,255,255,0.3);\n box-sizing:border-box;\n box-shadow: 0 5px 10px rgba(0,0,0,0.05);\n transition: all 0.5s;\n}\n#wrapper #content_left .result-op:hover,\n#wrapper #content_left .result:hover {\n box-shadow: none !important;\n background:rgba(255,255,255,1) !important\n}\n#wrapper #rs[ac-needhide],\n#wrapper #content_left .result[ac-needhide],\n#wrapper #content_left .c-container[ac-needhide] {\n padding:5px;\n padding-left:15px\n}\n#wrapper #content_left .result[tpl=soft] .op-soft-title,\n#wrapper #content_left .result h3,\n#wrapper #content_left .c-container h3 {\n background-color:rgba(248, 248, 248, .2);\n margin:0 -20px 10px;\n padding:8px 20px 5px;\n border-radius:0\n}\n#wrapper #content_left .f13 a,\n#wrapper #content_left .f13 em,\n#wrapper #content_left .c-span18 a,\n#wrapper #content_left .subLink_factory a,\n#wrapper #content_left .c-tabs-content a,\n#wrapper #content_left .op_offical_weibo_content a,\n#wrapper #content_left .op_offical_weibo_pz a,\n#wrapper #content_left .op_tieba2_tablinks_container a,\n#wrapper #content_left .op-tieba-general-right,\n#wrapper #content_left .op_dq01_title,\n#wrapper #content_left .op_dq01_table a,\n#wrapper #content_left .op_dq01_morelink a,\n#wrapper #content_left .op-tieba-general-mainpl a,\n#wrapper #content_left .op-se-listen-recommend,\n#wrapper #content_left .c-offset>div a {\n text-decoration:none;\n color:#2866bd\n}\n#wrapper #content_left .f13 a:hover,\n#wrapper #content_left .f13 em:hover,\n#wrapper #content_left .subLink_factory a:hover,\n#wrapper #content_left .c-tabs-content a:hover,\n#wrapper #content_left .op_tieba2_tablinks_container a:hover,\n#wrapper #content_left .op-tieba-general-right:hover,\n#wrapper #content_left .op_dq01_title:hover,\n#wrapper #content_left .op_dq01_table a:hover,\n#wrapper #content_left .op_dq01_morelink a:hover,\n#wrapper #content_left .op-tieba-general-mainpl a:hover,\n#wrapper #content_left .op-se-listen-recommend:hover,\n#wrapper #content_left .c-offset>div a:hover {\n text-decoration:underline!important\n}\n#wrapper #content_left .f13 a {\n color:green\n}\n#wrapper #content_left .c-span18,\n#wrapper #content_left .c-span24 {\n width:100%;\n min-width:unset\n}\n#wrapper #content_left .c-border {\n width:auto;\n border:0;\n border-bottom-color:transparent;\n border-right-color:transparent;\n box-shadow:0 0 0 transparent;\n -webkit-box-shadow:0 0 0 transparent;\n -moz-box-shadow:0 0 0 transparent;\n -o-box-shadow:0 0 0 transparent\n}\n#wrapper #content_left .se_com_irregular_gallery ul li,\n#wrapper #content_left .op_jingyan_list,\n#wrapper #content_left .result .op-img-address-link-type {\n display:inline-block;\n margin-left:10px\n}\n#wrapper #content_left .c-container[tpl=soft] .op-soft-title a,\n#wrapper #content_left .c-container[tpl=soft] .op-soft-title a em,\n#wrapper #content_left .c-container h3 a,\n#wrapper #content_left .result h3 a em {\n color:#2866bd;\n font-weight:700\n}\n#wrapper #content_left .op-soft-title a,\n#wrapper #content_left .result h3 a {\n position:relative\n}\n#wrapper #content_left .op-soft-title a em,\n#wrapper #content_left .result h3 a em {\n text-decoration:none\n}\n#wrapper #content_left .op-soft-title a:hover:after,\n#wrapper #content_left .result h3 a:hover:after {\n left:0;\n width:100%;\n -webkit-transition:width 350ms;\n -moz-transition:width 350ms;\n transition:width 350ms\n}\n#wrapper #content_left .op-soft-title a:after,\n#wrapper #content_left .result h3 a:after {\n content:\"\";\n position:absolute;\n border-bottom:2px solid #2866bd;\n bottom:-2px;\n left:100%;\n width:0;\n -webkit-transition:width 350ms,left 350ms;\n -moz-transition:width 350ms,left 350ms;\n transition:width 350ms,left 350ms\n}\n#wrapper #content_left .result h3,\n#wrapper #content_left .result-op h3 {\n font-weight:700;\n font-size:medium\n}\n#wrapper #content_left .op-soft-title a #content_left .result h3 a {\n position:relative\n}\n#wrapper #content_left .op-soft-title a:visited,\n#wrapper #content_left .op-soft-title a:visited em,\n#wrapper #content_left .result h3 a:visited,\n#wrapper #content_left .result h3 a:visited em {\n color:#609\n}\n#wrapper #content_left .op-soft-title a:visited:hover:after,\n#wrapper #content_left .result h3 a:visited:hover:after {\n left:0;\n width:100%;\n -webkit-transition:width 350ms;\n -moz-transition:width 350ms;\n transition:width 350ms\n}\n#wrapper #content_left .op-soft-title a:visited:after,\n#wrapper #content_left .result h3 a:visited:after {\n content:\"\";\n position:absolute;\n border-bottom:2px solid #609;\n bottom:-2px;\n left:100%;\n width:0;\n -webkit-transition:width 350ms,left 350ms;\n -moz-transition:width 350ms,left 350ms;\n transition:width 350ms,left 350ms\n}\n#wrapper #rs {\n margin-top:0;\n padding:0 20px 15px;\n border-radius:0px;\n transition: all 0.5s;\n}\n#wrapper #rs .tt {\n margin:0 -20px 5px;\n padding:5px 20px;\n background-color:rgba(248, 248, 248, .2);\n border-radius:0\n\n}\n#wrapper #rs:hover {\nbackground-color:#fff;\nbox-shadow:none !important;\n}\n#wrapper #rs table {\n width:630px;\n padding:5px 15px\n}\n#wrapper #rs table tr a {\n margin-top:5px;\n margin-bottom:5px;\n color:#2866bd\n}\n#wrapper #rs table tr a:hover {\n text-decoration:underline\n}\n#wrapper #page {\n min-width:710px;\n height:40px;\n line-height:40px;\n padding-top:5px;\n margin:0 0 50px 80px\n}\n.op-img-address-desktop-cont {\n overflow:hidden\n}\n#wrapper #page a,\n#wrapper #page strong {\n color:#2866bd;\n height:auto;\n box-shadow: 0 5px 10px rgba(0,0,0,0.05);\n}\n#wrapper #page .n:hover,\n#wrapper #page a:hover .pc {\n border:1px solid transparent;\n background:#d8d8d8;\n color:#0057da\n}\n#wrapper #page strong .pc {\n background:#4879bd;\n color:#fff\n}\n@-webkit-keyframes left_logoR {\n 0% {\n  -webkit-transform:translateY(64px);\n  opacity:0\n }\n 50% {\n  opacity:0\n }\n 100% {\n  opacity:1\n }\n}",
+        "regexps": [
+          "^http[s]?://www.baidu.com/.+(?:.(?!index\\.php|rtt=|vsearch\\?))+(?:wd=)+.+"
+        ]
+      }
+    ],
+    "name": "百度美化-少女前线G36",
+    "originalDigest": "bd6c205ffec207c12791ee7b17ff2bd615da3f19",
+    "_id": "cc23a3c7-790a-4066-98ee-b1e084eadf38",
+    "_rev": 1614761973749,
+    "id": 3,
+    "updateDate": 1598002310790
+  },
+  {
+    "enabled": true,
+    "updateUrl": "https://userstyles.org/styles/chrome/95033.json?ik-show_nyan=ik-show_nyan_always&ik-stars=ik-stars_animated",
+    "md5Url": "https://update.userstyles.org/95033.md5",
+    "url": "http://userstyles.org/styles/95033",
+    "originalMd5": "775bb5b2ac39853c44ca2ecb2b09c850",
+    "installDate": 1596875964224,
+    "sections": [
+      {
+        "code": ".html5-play-progress, .ytp-play-progress {\n   background: url(\"https://cdn.jsdelivr.net/gh/you-bowen/func_picgo/20200829115623.png\") repeat-x !important; \nbackground: linear-gradient(to bottom, #FF0000 0%, #FF0000 16.5%, #FF9900 16.5%, #FF9900 33%, #FFFF00 33%, #FFFF00 50%, #33FF00 50%, #33FF00 66%, #0099FF 66%, #0099FF 83.5%, #6633ff 83.5%, #6633ff 100%) !important;\nbackground: -webkit-linear-gradient(top, #FF0000 0%, #FF0000 16.5%, #FF9900 16.5%, #FF9900 33%, #FFFF00 33%, #FFFF00 50%, #33FF00 50%, #33FF00 66%, #0099FF 66%, #0099FF 83.5%, #6633ff 83.5%, #6633ff 100%) !important;\nbackground: -moz-linear-gradient(top, #FF0000 0%, #FF0000 16.5%, #FF9900 16.5%, #FF9900 33%, #FFFF00 33%, #FFFF00 50%, #33FF00 50%, #33FF00 66%, #0099FF 66%, #0099FF 83.5%, #6633ff 83.5%, #6633ff 100%) !important;\n}\n\n.html5-load-progress, .ytp-load-progress {\n   background:  url(\"https://cdn.jsdelivr.net/gh/you-bowen/func_picgo/20200829115542.gif\") !important;\n}\n\n.html5-scrubber-button, .ytp-scrubber-button {\n   background: url(\"https://cdn.jsdelivr.net/gh/you-bowen/func_picgo/20200829115033.gif\") !important;\n   width: 34px !important;\n   height: 21px !important;\n   border: none !important;\n   margin-left: -18px !important;\n   margin-top: 0px !important;\n   transform: scale(0.8);\n-webkit-transform: scale(0.8);\n-moz-transform: scale(0.8);\n-ms-transform: scale(0.8);\n}\n.ytp-progress-bar-container:hover .ytp-scrubber-button,\n.ytp-progress-bar-container:hover .ytp-load-progress{\n\timage-rendering: pixelated;\n}\n.html5-progress-bar-container, .ytp-progress-bar-container {\n   height: 12px !important;\n}\n.html5-progress-bar, .ytp-progress-bar {\n   margin-top: 12px !important;\n}\n.html5-progress-list, .ytp-progress-list, .video-ads .html5-progress-list.html5-ad-progress-list, .video-ads .ytp-progress-list.ytp-ad-progress-list {\n   height: 12px !important;\n}\n.ytp-volume-slider-track {\n   background: #0C4177 !important;\n}",
+        "domains": [
+          "youtube.com"
+        ]
+      }
+    ],
+    "name": "YouTube - Nyan Cat progress bar video player theme",
+    "originalDigest": "cdb7de2f920948c487fb7568e6cdba58962c21bd",
+    "_id": "13ab84a8-305d-407f-9bb5-46e51c794657",
+    "_rev": 1614761973749,
+    "id": 8,
+    "updateDate": 1598673390683
+  }
+]
