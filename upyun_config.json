@@ -1,0 +1,14 @@
+{
+  "picBed": {
+    "current": "upyun",
+    "upyun": {
+      "bucket": "", // 存储空间名，及你的服务名
+      "operator": "", // 操作员
+      "password": "", // 密码
+      "options": "", // 针对图片的一些后缀处理参数
+      "path": "", // 自定义存储路径，比如 img/
+      "url": "" // 加速域名，注意要加 http://或者 https://
+    }
+  },
+  "picgoPlugins": {}
+}
