@@ -1,0 +1,103 @@
+{
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "defaultProfile": "{d8f61fe2-70c0-41a3-b892-cf9a4877fcf3}",
+    "copyOnSelect": false,
+    "copyFormatting": false,
+    "profiles": {
+        "defaults": {
+            "useAcrylic": true,
+            "acrylicOpacity": 0.6,
+            "fontFace": "Fira Code",
+            "colorScheme": "Dracula"
+        },
+        "list": [{
+                "guid": "{d8f61fe2-70c0-41a3-b892-cf9a4877fcf3}",
+                "hidden": false,
+                "name": "cygwin64",
+                "commandline": "C:\\cygwin64\\bin\\fish.exe -l",
+                "icon": "C:/cygwin64/Cygwin-Terminal.ico"
+            },
+            {
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "name": "Windows PowerShell",
+                "commandline": "powershell.exe",
+                "hidden": false
+            },
+            {
+                "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
+                "hidden": false,
+                "name": "Ubuntu-20.04",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "name": "命令提示符",
+                "commandline": "cmd.exe",
+                "hidden": false
+            },
+            {
+                "guid": "{46ca431a-3a87-5fb3-83cd-11ececc031d2}",
+                "hidden": false,
+                "name": "kali-linux",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": false,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            },
+            {
+                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "hidden": false,
+                "name": "Ubuntu",
+                "source": "Windows.Terminal.Wsl"
+            }
+        ]
+    },
+    "schemes": [{
+        "name": "Dracula",
+        "black": "#000000",
+        "red": "#ff5555",
+        "green": "#50fa7b",
+        "yellow": "#f1fa8c",
+        "blue": "#bd93f9",
+        "purple": "#ff79c6",
+        "cyan": "#8be9fd",
+        "white": "#bbbbbb",
+        "brightBlack": "#555555",
+        "brightRed": "#ff5555",
+        "brightGreen": "#50fa7b",
+        "brightYellow": "#f1fa8c",
+        "brightBlue": "#bd93f9",
+        "brightPurple": "#ff79c6",
+        "brightCyan": "#8be9fd",
+        "brightWhite": "#ffffff",
+        "background": "#1e1f29",
+        "foreground": "#f8f8f2"
+    }],
+    "actions": [{
+            "command": {
+                "action": "copy",
+                "singleLine": false
+            },
+            "keys": "ctrl+c"
+        },
+        {
+            "command": "paste",
+            "keys": "ctrl+v"
+        },
+        {
+            "command": "find",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "command": {
+                "action": "splitPane",
+                "split": "auto",
+                "splitMode": "duplicate"
+            },
+            "keys": "alt+d"
+        }
+    ]
+}
